@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h3{
+    color: white;
+}
+
+
+@font-face {
+    font-family: Myfont;
+    src: url(GOW.TTF);
+  }
+  
+  @font-face {
+    font-family: Myfont2;
+    src: url(LOGO1.ttf);
+  }
+
+h4{
+    font-family: Myfont;
+    color: yellow;
+    text-align: center;
+    font-size: 4rem;
+}
+
+/* 8vw yan */
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(youo.gif);
+    background-size: 40%;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Myfont;
+}
+
+nav{
+    background-color: whitesmoke;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav h2{
+    font-family: Myfont2;
+}
+
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    font-family: Myfont;
+}
+
+nav li{
+    height: 70px;
+
+}
+
+nav a{
+    height: 100%;
+    /* distance sa nav bar */
+    padding: 0 50px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;   
+}
+
+nav a:hover{
+    background-color: brown;
+}
+
+nav li:first-child{
+    margin-right: auto;
+    font-family: Myfont2;
+    font-size: 50px;
+}
+
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: white;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(255, 255, 255, 0.2);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%; 
+}
+
+
+.menu-button{
+    display: none;
+
+}
+
+a:hover{
+    color: yellow;
+}
+
+
+@media(max-width: 800px){
+    .hideOnMobile{
+      display: none;
+    }
+
+.menu-button{
+    display: block;
+}
+}
+
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+
+
+@media(max-width: 1032px ){
+    .greetings{
+        font-size: 2.5rem;
+    }
+
+}
+
+@media(max-width: 590px ){
+    .greetings{
+        font-size: 2rem;
+    }
+}
+
+@media(max-width: 472px ){
+    .greetings{
+    font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 353px ){
+    .greetings{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 236px ){
+    .greetings{
+        font-size: 0.5rem;
+        }
+                
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
